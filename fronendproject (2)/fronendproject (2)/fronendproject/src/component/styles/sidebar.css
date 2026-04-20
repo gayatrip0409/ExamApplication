@@ -1,0 +1,29 @@
+.sidebar-custom {
+  min-height: 100vh;
+  width: 250px;
+  background-color: #002d62; /* main dark navy */
+}
+
+.sidebar-custom .accordion-button {
+  background-color: #003366; /* lighter navy */
+  color: #fff;
+}
+
+.sidebar-custom .accordion-button:not(.collapsed) {
+  background-color: #004080; /* active navy */
+  color: #fff;
+}
+
+.sidebar-custom .accordion-body a {
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-custom .accordion-body a:hover {
+  background-color: #004080;
+  border-radius: 5px;
+}
+
+.sidebar-custom .accordion-item {
+  background-color: transparent;
+}

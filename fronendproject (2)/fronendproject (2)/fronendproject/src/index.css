@@ -1,0 +1,81 @@
+/* App Layout */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f9fc;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e3a8a;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffd700;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Main Content */
+.main-layout {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f4f8;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+  }
+}
